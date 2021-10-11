@@ -1,10 +1,9 @@
-// basic setup for server
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
-  console.log(`🎉 Server is running on ${PORT}! 🎉`);
+  console.log(`🎉 Sever is running on ${PORT} 🎉`);
 });
 
 module.exports = app;
