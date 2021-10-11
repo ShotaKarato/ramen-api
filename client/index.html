@@ -29,15 +29,34 @@
           <a href="" class="ramen_search__req-link" data-id="post">POST</a>
         </li>
         <li>
-          <a href="" class="ramen_search__req-link" data-id="patch">PATCH</a>
+          <a href="" class="ramen_search__req-link" data-id="put">PUT</a>
         </li>
       </ul>
       <div class="ramen_search__inputs">
-        <fieldset class="ramen_search__input-container">
-          <label for="number" class="ramen_search__input-label">
-            <input type="number" name="" id="display_number" placeholder="How many shops?" class="ramen_search__input-number">
+        <fieldset class="ramen_search__input-container hidden" data-id="get">
+          <label class="ramen_search__input-label">
+            <input type="number" name="" id="get_display_number" placeholder="Which shop?" class="ramen_search__input-number">
           </label>
-          <button class="ramen_search__submit-btn">FIND!</button>
+          <button class="ramen_search__submit-btn" data-id="get">FIND!</button>
+        </fieldset>
+        <fieldset class="ramen_search__input-container hidden" data-id="delete">
+          <label class="ramen_search__input-label">
+            <input type="number" name="" id="delete_id" placeholder="Which shops?" class="ramen_search__input-number">
+          </label>
+          <button class="ramen_search__submit-btn" data-id="delete">DELETE!</button>
+        </fieldset>
+        <fieldset class="ramen_search__input-container hidden" data-id="post">
+          <label class="ramen_search__input-label">
+            <input type="text" name="" id="post_shop_info" placeholder="Shop info" class="ramen_search__input-text">
+          </label>
+          <button class="ramen_search__submit-btn" data-id="post">POST!</button>
+        </fieldset>
+        <fieldset class="ramen_search__input-container hidden" data-id="put">
+          <label class="ramen_search__input-label ramen_search__input-label--2col">
+            <input type="number" name="" id="put_shop_id" placeholder="Shop Id" class="ramen_search__input-number">
+            <input type="text" name="" id="put_shop_info" placeholder="Shop info" class="ramen_search__input-text">
+          </label>
+          <button class="ramen_search__submit-btn" data-id="put">PUT!</button>
         </fieldset>
       </div>
       <div class="ramen_search__display"></div>

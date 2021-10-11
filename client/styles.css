@@ -79,8 +79,18 @@ body {
   text-align: center;
   font-size: 1.6rem;
 }
+.ramen_search__input-label.ramen_search__input-label--2col {
+  display: flex;
+  margin: 0 0 36px;
+  text-align: center;
+  font-size: 1.6rem;
+}
 .ramen_search__input-number {
   width: 150px;
+  padding: 12px 4px;
+}
+.ramen_search__input-text {
+  width: 100%;
   padding: 12px 4px;
 }
 .ramen_search__submit-btn {
