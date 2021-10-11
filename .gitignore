@@ -1,5 +1,6 @@
 .env
 knexfile.js
+post.ini
 
 node_modules
 migrations
