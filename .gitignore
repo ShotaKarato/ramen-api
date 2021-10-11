@@ -1,4 +1,7 @@
 .env
+knexfile.js
 
 node_modules
+migrations
+seeds
 .vscode

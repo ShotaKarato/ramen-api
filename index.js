@@ -1,8 +1,16 @@
 const express = require("express");
 const app = require("./server/server");
 const knex = require("./knex");
+const cors = require('cors');
+const PORT = process.env.PORT || 4000;
+
+// run server
+app.listen(PORT, () => {
+  console.log(`🎉 Sever is running on ${PORT} 🎉`);
+});
 
 app.use(express.json());
+app.use(cors());
 
 // GET: get shop info
 app.get("/api/ramen", async (req, res) => {
