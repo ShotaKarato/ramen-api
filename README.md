@@ -30,8 +30,45 @@ Keep this in mind, for PUT and DELETE request, you always to have to provide sho
 |Gut shop info with a specific id|PUT|/api/ramen/id|
 |Delete shop info with a specific id|DELETE|/api/ramen/id|
 
-Please refer some examples below;
-
+Some example blow might come in handy when you make a request from your front-end page.\  
+- POST request\
+For POST request please provide shop info as JASON format. You can pass info by setting it as a value of body property.
+```javascript
+let response = await fetch(`http://localhost:4000/api/ramen`, {
+    method: "POST", 
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: please_put_JASON_here
+  });
+```
+- GET request
+```javascript
+let response = await fetch(`http://localhost:4000/api/ramen/${shop_id}`, {
+    method: "GET", 
+    mode: 'cors',
+  });
+```
+- PUT request\
+For PUT request please provide shop info as JASON format. You can pass info by setting it as a value of body property.
+```javascript
+let response = await fetch(`http://localhost:4000/api/ramen/${shop_id}`, {
+    method: "PUT", 
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: please_put_JASON_here
+  });
+```
+- DELETE request
+```javascript
+let response = await fetch(`http://localhost:4000/api/ramen/${shop_id}`, {
+    method: "DELETE", 
+    mode: 'cors',
+  });
+```
 
 ## Database structure
 Database has 5 columns in total. These are what you'll see as a response when you make a request.
