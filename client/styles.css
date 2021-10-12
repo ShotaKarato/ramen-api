@@ -30,17 +30,18 @@ body {
 .ramen_search__box {
   width: 50%;
 }
-.ramen_search__box.ramen_search__box--left {
+.ramen_search__box {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+}
+.ramen_search__box.ramen_search__box--left {
+  justify-content: flex-end;
+  align-items: center;
   padding: 160px 0;
   background: no-repeat url('./img/ramen.jpg');
   background-size: cover;
 }
 .ramen_search__box.ramen_search__box--right {
-  display: flex;
-  flex-direction: column;
   align-items: space-between;
   padding: 20px 20px;
 }
@@ -52,6 +53,13 @@ body {
 }
 .ramen_search__main-title span {
   font-size: 7.2rem;
+}
+.ramen_search__main-copyright {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.ramen_search__main-copyright a {
+  color: #fff;
 }
 .ramen_search__req-list {
   display: flex;
@@ -66,6 +74,8 @@ body {
 .ramen_search__req-list li a {
   text-decoration: none;
   color: #444;
+  font-size: 2rem;
+  font-weight: 700;
 }
 .ramen_search__inputs {
   height: 200px;
