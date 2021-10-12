@@ -27,7 +27,7 @@ Keep this in mind, for PUT and DELETE request, you always to have to provide sho
 |Post shop info|POST|/api/ramen|
 |Get all shop info|GET|/api/ramen|
 |Get shop info with a specific id|GET|/api/ramen/id|
-|Gut shop info with a specific id|PUT|/api/ramen/id|
+|Put shop info with a specific id|PUT|/api/ramen/id|
 |Delete shop info with a specific id|DELETE|/api/ramen/id|
 
 Some example blow might come in handy when you make a request from your front-end page.\  
